@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA</title>
+    <style>
+        .body {
+         margin: 0;
+        background-color: #f6f6f6;
+         padding: 0;
+     }
+
+      .card {
+      background-color: white;
+      border: 2px solid;
+      border-color: violet;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 50px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+     }
+
+        .header{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        
+       
+        .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: aqua;
+  gap: 30px;              
+  padding: 40px 20px;     
+}
+        
+        .card:hover{
+            transform: scale(1.05);
+        }
+        
+       
+        
+        .price{
+            color:orangered;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+</style>
+</head>
+<body>
+    <header style="background-color: black;color: white;padding: 20px;text-align: center;" >
+        <h1  style="margin: 0;font-size: 20px;letter-spacing: 2px;text-shadow: 120px;">PUMA STORE</h1>
+    </header>
+
+    <nav style="background-color:red; text-align: center; padding: 10px;">
+        <a href="#" style="color: white;margin: 10 15px;text-decoration: none;font-weight: bold;background-color: black;">Home</a>
+        <a href="#" style="color: white;margin: 10 15px;text-decoration: none;font-weight: bold;background-color: black;">Men</a>
+        <a href="#" style="color: white;margin: 10 15px;text-decoration: none;font-weight: bold;background-color: black;">Women</a>
+        <a href="#" style="color: white;margin: 10 15px;text-decoration: none;font-weight: bold;background-color: black;">Shoes</a>
+        <a href="#" style="color: white;margin: 10 15px;text-decoration: none;font-weight: bold;background-color: black;">Accessories</a>
+
+    </nav>
+    <section class="products">
+        <div class="card">
+    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600/global/393175/01/sv01/fnd/IND/fmt/png" alt="Puma Slipstream Sneaker" width="300">
+            <div class="info"style="padding: 15px;">
+                <h3 style=" margin: 10px 0 5px;">Slipstream Sneaker</h3>
+                <p style="margin: 0;
+            font-size: 14px;
+            color: grey;">Lightweight shoes ideal for running and working!</p>
+                <div class="price">$499</div>
+            </div>
+        </div>
+
+        <div class="card">
+    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600/global/377028/10/sv01/fnd/IND/fmt/png" alt="Puma Running Shoes" width="300">
+            <div class="info" style="padding: 15px;">
+                <h3 style=" margin: 10px 0 5px;">Running Shoes</h3>
+                <p style="margin: 0;
+            font-size: 14px;
+            color: grey;">Idea shoes ideal for running and working!</p>
+                <div class="price">$599</div>
+            </div>
+        </div>
+
+        <div class="card">
+    <img src="https://m.media-amazon.com/images/I/61P88RnTOKL._AC_SX569_.jpg" alt="Puma Logo T-Shirt" width="300">
+            <div class="info"style="padding: 15px;">
+                <h3 style=" margin: 10px 0 5px;">Logo T-shirt</h3>
+                <p style="margin: 0;
+            font-size: 14px;
+            color: grey;">Comfortable Puma t-shirt with bold logo design!</p>
+                <div class="price">$1699</div>
+            </div>
+        </div>
+        <div class="card">
+    <img src="https://i.ebayimg.com/00/s/MTYwMFgxMjM1/z/KK0AAOSwCUdjWAFQ/$_58.png" alt="Puma casual Sneaker" width="300">
+            <div class="info"style="padding: 15px;">
+                <h3 style=" margin: 10px 0 5px;">Casual Sneaker</h3>
+                <p style="margin: 0;
+            font-size: 14px;
+            color: grey;">Lightweight sneaker ideal for running and working!</p>
+                <div class="price">$899</div>
+            </div>
+        </div>
+
+        <div class="card">
+    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/845802/01/mod01/fnd/PNA/fmt/png/Essentials-Men's-Cargo-Pants" alt="Puma Trouser" width="300">
+            <div class="info"style="padding: 15px;">
+                <h3 style=" margin: 10px 0 5px;">Trouser</h3>
+                <p style="margin: 0;
+            font-size: 14px;
+            color: grey;">Lightweight trouser ideal for daily wearing and working!</p>
+                <div class="price">$999</div>
+            </div>
+        </div>
+
+        <div class="card">
+    <img src="https://i.pinimg.com/736x/99/06/8e/99068ec8d456a8e06c9a7f27ac5919e5.jpg" alt="Puma WatchSlipstream Sneaker" width="300">
+            <div class="info"style="padding: 15px;">
+                <h3 style=" margin: 10px 0 5px;">Watches</h3>
+                <p style="margin: 0;
+            font-size: 14px;
+            color: grey;">Watch that makes you look expensive!</p>
+                <div class="price">$1599</div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+  &copy; 2025 PUMA India. All rights reserved.
+</footer>
+</body>
+</html>
