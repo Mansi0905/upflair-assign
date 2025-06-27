@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropdown</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      background-color: rgb(220, 220, 222);
+      width: 1000px;
+      height: 600px;
+      border: 1px solid black;
+      position: relative; 
+      overflow: visible;  
+    }
+
+    .navbar {
+      background-color: rgb(76, 90, 246);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 60px;
+      padding-right: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .navbar a, .btn {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      background-color: rgb(55, 60, 73);
+      cursor: pointer;
+      display: block;
+      border: none;
+    }
+
+    .navbar a:hover, .btn:hover {
+      background-color: rgb(73, 79, 99);
+    }
+
+    .drop {
+      position: relative;
+    }
+
+    .content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgb(55, 60, 73);
+      min-width: 180px;
+      z-index: 3;
+    }
+
+    .drop:hover .content {
+      display: block;
+    }
+
+    .content a, .photo-btn {
+      padding: 12px 16px;
+      color: white;
+      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .photo-btn {
+      position: relative;
+    }
+
+    .photo {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: rgb(55, 60, 73);
+      min-width: 180px;
+      z-index: 4;
+    }
+
+    .photo-btn:hover .photo {
+      display: block;
+    }
+
+    .content a:hover, .photo a:hover {
+      background-color: rgb(73, 79, 99);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <div class="drop">
+        <span class="btn">Work ▼</span>
+        <div class="content">
+          <a href="#">Design</a>
+          <a href="#">Development</a>
+          <div class="photo-btn">Photography ▼
+            <div class="photo">
+              <a href="#">Nature</a>
+              <a href="#">People</a>
+              <a href="#">Pets</a>
+            </div>
+          </div>
+          <a href="#">Writing</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
