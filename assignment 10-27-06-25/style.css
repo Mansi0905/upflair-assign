@@ -1,0 +1,107 @@
+.library-container {
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #ff88b0;
+}
+
+.table-header, .game-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.game-row {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.game-col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-col img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.game-col strong {
+    font-size: 1rem;
+}
+
+.game-col span {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.date-col, .hours-col, .status-col {
+    font-size: 0.9rem;
+}
+
+.action-col {
+    text-align: right;
+}
+
+.downloaded-btn, .download-btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.downloaded-btn {
+    background: #333;
+    color: #ccc;
+}
+
+.download-btn {
+    background: transparent;
+    border: 1px solid #ff88b0;
+    color: #ff88b0;
+}
+
+.download-btn:hover {
+    background: #ff88b0;
+    color: black;
+}
+
+.view-library-btn {
+    width: 20%;
+    margin-left: 50%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #ff88b0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.view-library-btn:hover {
+    background: #ff5e94;
+}
