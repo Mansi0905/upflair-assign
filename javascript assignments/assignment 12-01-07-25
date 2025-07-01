@@ -1,0 +1,127 @@
+// LOOP BASICS
+
+ for(let i=1;i<=10;i++){
+     console.log(i)
+ }
+ let j=10;
+ while ( j>0) {
+     j--;
+     console.log(j)
+ }
+ let no=1;
+ do{   console.log(no);
+     no= no+1;
+ }
+ while(no<=5);
+
+//EVEN,ODD,MULTIPLES
+
+for(let i=1;i<=50;i++){
+    if(i%2==0){
+        console.log(i);
+    }
+}
+
+for(let i=20;i<=50;i++){
+    if(i%2 !==0){
+        console.log(i);
+    }
+}
+
+for (let i=1;i<=30;i++){
+    if(i%3==0){
+                console.log(i);
+
+    }
+}
+
+// SUMMATION & PRODUCT
+
+let sum=0;
+for(let i=1;i<=100;i++){
+    sum += i;
+}
+        console.log(sum);
+
+let product=1;
+for(let i=1;i<=10;i++){
+    product *= i;
+}
+        console.log(product);  
+        
+let sumo=0;
+for(let i=1;i<=50;i++){
+    if(i%2==0){
+    sumo += i;
+}}
+        console.log(sumo);  
+        
+let sumi=0;
+for(let i=1;i<=10;i++){
+    sum += i*i;
+}
+        console.log(sumi);    
+        
+//CONDITIONALS INSIDE LOOPS
+
+for(let i=1;i<=20;i++){
+    if(i%4==0){
+        continue;
+    }
+    console.log(i);
+}
+
+for(let l=1;l<=10;l++){
+    if(l===7){
+        break;
+    }
+    console.log(l);
+}
+
+let count=0;
+for(k=1;k<=100;k++){
+    if(k%3===0 && k%5===0){
+        count++;
+    }
+}
+console.log(count);
+
+for(let a=1;a<=3;a++){
+    for(b=1;b<=4;b++){
+        if(a+b===5){
+            console.log({a},{b});
+        }
+    }
+}
+
+//LOGIC BASED TASKS
+let num=23;
+let isprime=true;
+if(num<=1){
+    isprime=false;
+}else{
+    for(let h=2;h*h<= num; h++){
+        if(num% h===0){
+            isprime = false;
+            break;
+        }
+    }
+}
+console.log(isprime? "prime":"not prime");
+ let n=5;
+ let facto=1;
+ for(let i=1;i<=n;i++){
+    facto *= i;
+ }
+ console.log(facto);
+
+ 
+
+ let vh=121;
+ let o=vh;
+ let r=0;
+ while(vh>0){
+    r=r*10 + vh%10;
+    vh=(vh-vh%10)/10
+ }
+ console.log(o===r ? "palindrome":"not palindrome");
