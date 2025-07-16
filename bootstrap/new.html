@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bal"></div>
+    <form id="form" onsubmit="show()">
+        <label for="">Add expebnse</label><input id="expense" type="text">
+        <button>Save</button>
+
+    </form>
+    <ul></ul>
+    <script>
+        let input=document.getElementById('expense')
+        let form = document.getElementById('form')
+        let ul = document.querySelector('ul')
+        let balance= document.querySelector('.bal')
+        let expense=[]
+
+        form.addEventListener('submit', show)
+        function show(e){
+            e.preventDefaullt()
+            let value= parseInt(input.value)
+            console.log(input.value)
+            expense.push(input.value)
+            calculate()
+            return false
+        }
+        function calculate(){
+            let total=expense.reduce((p,c,i)=>p+c,0)
+            balance.innerHTML=total
+        }
+    </script>
+    
+</body>
+</html>
